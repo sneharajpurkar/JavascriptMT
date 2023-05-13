@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="server.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #screen{
+            width: 100%;
+            height: 100vh;
+            border: 3px solid black;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #form{
+            width: 28%;
+            height: 45vh;
+            border: 1px solid red;
+            /* align-items: center; */
+
+        }
+        #form>form>label{
+            font-size: 20px;
+        }
+        #form>form>input{
+            width: 90%;
+            height: 40px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="form">
+            <form onsubmit="register(event)">
+                <label>Name</label><br />
+                <input type="text" placeholder="Add name" id="t-name" /><br />
+                <label>Email</label><br />
+                <input type="email" placeholder="Add name" id="t-email" /><br />
+                <label>Password</label><br />
+                <input type="password" placeholder="Add name" id="t-password" /><br />
+                <label>Confirm Password</label><br />
+                <input type="password" placeholder="Add name" id="t-confirmPassword" /><br />
+                <input style="margin-top: 20px;" type="submit" value="Register" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
